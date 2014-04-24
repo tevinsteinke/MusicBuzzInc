@@ -1,0 +1,12 @@
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\MusicBuzzInc.mdf
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\MusicBuzzInc_log.ldf
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\MusicBuzzIncService.dll.config
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\MusicBuzzIncService.dll
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\MusicBuzzIncService.pdb
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\MusicDataAccess.dll
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\EntityFramework.dll
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\MusicDataAccess.pdb
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\bin\EntityFramework.xml
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\obj\Debug\MusicBuzzIncService.csprojResolveAssemblyReference.cache
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\obj\Debug\MusicBuzzIncService.dll
+C:\Users\Tevin\Desktop\it431\MusicBuzzInc\MusicBuzzIncService\obj\Debug\MusicBuzzIncService.pdb
