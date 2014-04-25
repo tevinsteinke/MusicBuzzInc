@@ -14,10 +14,9 @@ public partial class AlbumList : System.Web.UI.Page
     {
         if (!IsPostBack)
         {
-            AlbumDataAccess albumDA = new AlbumDataAccess();
-            List<MusicDataAccess.Album> albums = albumDA.GetAll();
-            //AlbumServiceProxy.AlbumServiceClient albums = new AlbumServiceProxy.AlbumServiceClient();
-
+            //AlbumDataAccess albumDA = new AlbumDataAccess();
+            //List<MusicDataAccess.Album> albums = albumDA.GetAll();
+            AlbumServiceProxy.AlbumServiceClient albums = new AlbumServiceProxy.AlbumServiceClient();
             Repeater1.DataSource = albums;
             Repeater1.DataBind();
             ////1. connect to the db
