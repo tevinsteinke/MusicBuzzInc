@@ -6,33 +6,33 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Data.SqlClient;
 using System.Data;
+
 using MusicDataAccess;
 
 public partial class modify_album : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        string albumId = Request.QueryString["id"];
-        SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\temp\\MusicBuzzInc.mdf;Integrated Security=True");
-        SqlCommand command = new SqlCommand();
-        string sqlStatement = "Select * from Album where AlbumId = {0}";
-        sqlStatement = string.Format(sqlStatement, albumId);
-        command.CommandText = sqlStatement;
-        command.Connection = con;
-        con.Open();
-        SqlDataReader dr = command.ExecuteReader();
-        while (dr.Read())
+        if (!IsPostBack)
         {
-            txtAlbumName.Text = dr["AlbumName"].ToString();
-            txtArtistName.Text = dr["ArtistName"].ToString();
-            txtLabel.Text = dr["Label"].ToString();
-            ddlGenre.SelectedValue = dr["Genre"].ToString();
-            txtYear.Text = dr["Year"].ToString();
+            AlbumDataAccess albumDA = new AlbumDataAccess();
+            MusicDataAccess.Album cur = albumDA.FindAlbum(int.Parse(Request.QueryString["id"]));
+
+            //fill in the fields, only if they aren't null
+            if (cur.AlbumName != null) { txtAlbumName.Text = cur.AlbumName.ToString(); }
+            if (cur.ArtistName != null) { txtArtistName.Text = cur.ArtistName.ToString(); }
+            if (cur.Label != null) { txtLabel.Text = cur.Label.ToString(); }
+            if (cur.Genre != null) { ddlGenre.SelectedValue = cur.Genre.ToString(); }
+            if (cur.Year != null) { txtYear.Text = cur.Year.ToString(); }
         }
-        con.Close();
     }
     protected void BtnDelete_Click(object sender, EventArgs e)
     {
+        //AlbumDataAccess find = new AlbumDataAccess();
+        //MusicDataAccess.Album cur = find.FindAlbum(int.Parse(Request.QueryString["id"]));
+        ////find.Attach(cur);
+        //AlbumDataAccess delete = new AlbumDataAccess();
+        //delete.Delete(cur);
         string albumId = Request.QueryString["id"];
         SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\temp\\MusicBuzzInc.mdf;Integrated Security=True");
         SqlCommand command = new SqlCommand();

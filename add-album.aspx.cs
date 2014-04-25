@@ -74,7 +74,7 @@ public partial class add_album : System.Web.UI.Page
             //FileStream FS = new FileStream(filepath, FileMode.Open, FileAccess.Read); //create a file stream object associate to user selected file 
             //byte[] img = new byte[FS.Length]; //create a byte array with size of user select file stream length
             //FS.Read(img, 0, Convert.ToInt32(FS.Length));//read user selected file stream in to byte array
-            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\Tevin\\Desktop\\it431\\MusicBuzzInc\\App_Data\\MusicBuzzInc.mdf;Integrated Security=True");
+            SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\temp\\MusicBuzzInc.mdf;Integrated Security=True");
             SqlCommand command = new SqlCommand();
             string sqlStatement =
                 @"Insert into Album(AlbumName, ArtistName, Label, Genre, Year)
