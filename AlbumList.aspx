@@ -38,7 +38,7 @@
           <div class="medium-6 large-3 columns album">
               <asp:HiddenField ID="genre" runat="server" value='<%# Eval("Genre")%>' ClientIDMode="Static" />
               <div class="show">
-                  <img src="http://www.stereogum.com/img/in_the_aeroplane-turns_ten.jpg" />
+                  <img src='<%# Eval("Artwork")%>' />
       
                   <div class="mask">
                     <h2><%# Eval("AlbumName") %></h2>

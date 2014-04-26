@@ -25,41 +25,6 @@ public partial class AlbumList : System.Web.UI.Page
             //List<Album> a = albums.GetAll();
             Repeater1.DataSource = albums;
             Repeater1.DataBind();
-            ////1. connect to the db
-            //SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\v11.0;AttachDbFilename=C:\\Users\\Tevin\\Desktop\\it431\\MusicBuzzInc\\App_Data\\MusicBuzzInc.mdf;Integrated Security=True");
-
-            ////2. pass the SQL statements
-            //SqlDataAdapter da = new SqlDataAdapter("Select * from album", con);
-
-            ////3. get the data
-            //DataSet ds = new DataSet();
-            //da.Fill(ds,"Album");
-
-            ////4. bind the data to the grid
-            //GridView1.DataSource = ds;
-            //GridView1.DataBind();
-            
-            ////1. connection object
-            ////2. use command object
-            //SqlCommand command = new SqlCommand("Select * from Album", con);
-            ////3. get the data 
-            //con.Open();
-            //SqlDataReader dr = command.ExecuteReader();
-            //while (dr.Read())
-            //{
-            //    ListItem list = new ListItem();
-            //    list.Value = dr["AlbumId"].ToString();
-            //    string displaytext = string.Format("{0} - {1}, {2}",
-            //        dr["AlbumId"].ToString(),
-            //        dr["AlbumName"].ToString(),
-            //        dr["ArtistName"].ToString());
-
-            //    list.Text = displaytext;
-            //    DropDownList1.Items.Add(list);
-
-            //}
-
-            //con.Close();
         }
         
     }

@@ -70,16 +70,17 @@
             </asp:TextBox>
         </div>
     </div>
-    <%--<div class="row">
+    <div class="row">
         <div class="small-12 large-3 columns">
-            <asp:Label ID="lblImage" runat="server" 
+            <asp:Label ID="lblArtwork" runat="server" 
                 Text="Image">
             </asp:Label>
         </div>
         <div class="small-12 large-9 columns">
-            <asp:FileUpload ID="fileImage" runat="server"></asp:FileUpload>
+            <asp:TextBox ID="txtArtwork" runat="server">
+            </asp:TextBox>
         </div>
-    </div>--%>
+    </div>
     <div class="row">
         <div class="small-12 large-3 columns">
             <asp:Label ID="lblGenre" runat="server" 

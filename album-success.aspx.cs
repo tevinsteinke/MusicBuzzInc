@@ -15,16 +15,7 @@ public partial class page1 : System.Web.UI.Page
             {
                 lblAlbumName.Text = Session["AlbumName"].ToString();
                 lblArtistName.Text = Session["ArtistName"].ToString();
-                //lblAlbumName.Text += Application["AlbumName"].ToString();
             }
-            /*
-            HttpCookie cookie = Request.Cookies["cookieAlbum"];
-            if (cookie != null)
-            {
-                lblAlbumName.Text = "Cookie: " + cookie.Value;
-            }
-            */
-            /*lblAlbumName.Text = Request.QueryString["Car"];*/
         }
         catch (Exception exp)
         {

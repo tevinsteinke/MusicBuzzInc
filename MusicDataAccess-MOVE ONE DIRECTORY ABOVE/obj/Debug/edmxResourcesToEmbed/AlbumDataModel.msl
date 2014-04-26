@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MusicBuzzIncModelStoreContainer" CdmEntityContainer="MusicBuzzIncEntities">
+    <EntitySetMapping Name="Albums">
+      <EntityTypeMapping TypeName="MusicBuzzIncModel.Album">
+        <MappingFragment StoreEntitySet="Album">
+          <ScalarProperty Name="Artwork" ColumnName="Artwork" />
+          <ScalarProperty Name="AlbumId" ColumnName="AlbumId" />
+          <ScalarProperty Name="AlbumName" ColumnName="AlbumName" />
+          <ScalarProperty Name="ArtistName" ColumnName="ArtistName" />
+          <ScalarProperty Name="Label" ColumnName="Label" />
+          <ScalarProperty Name="Genre" ColumnName="Genre" />
+          <ScalarProperty Name="Year" ColumnName="Year" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

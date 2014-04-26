@@ -1,0 +1,11 @@
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\MusicBuzzInc.mdf
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\MusicBuzzInc_log.ldf
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\MusicDataAccess.dll.config
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\MusicDataAccess.dll
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\MusicDataAccess.pdb
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\EntityFramework.dll
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\EntityFramework.xml
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\obj\Debug\MusicDataAccess.dll
+C:\Users\Tevin\Desktop\it431\MusicDataAccess\obj\Debug\MusicDataAccess.pdb
